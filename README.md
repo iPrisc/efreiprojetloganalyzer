@@ -1,6 +1,6 @@
 # Projet Efrei Loganalyzer
 
-Mini-CRM en Go (1.25.1) pour gérer une liste de contacts.
+LogAnalyzer est un outil en ligne de commande (CLI) en Go (1.25.1) qui permet d'analyser des fichiers de logs provenant de différents endroits (serveurs, applications) en parallèle.
 
 ## Fonctionnalités
 
@@ -14,9 +14,14 @@ Mini-CRM en Go (1.25.1) pour gérer une liste de contacts.
 ```bash
 go run main.go analyze --config config.json [--output report.json]
 ```
+ou
+```bash
+go build -o loganalyzer.exe
+./loganalyzer analyze --config config.json [--output report.json]
+```
 
-Options :
---config, -c : chemin vers le fichier de configuration JSON (obligatoire)
+Options :<br>
+--config, -c : chemin vers le fichier de configuration JSON (obligatoire)<br>
 --output, -o : chemin vers le rapport JSON (optionnel)
 
 ## Exemple de configuration
